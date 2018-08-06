@@ -12,7 +12,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\Lenovo\\GDevelop projects\\My project4\\game.json",
+    "projectFile": "C:\\Users\\PRF\\GDevelop projects\\My project6\\ludum-dare-42-master\\game.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -97,7 +97,24 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "../cyberpunk-street-files/PNG/cyberpunk-street.png",
+        "kind": "image",
+        "name": "cyberpunk-street.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Image-1.png",
+        "kind": "image",
+        "name": "Image-1.png",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
@@ -135,14 +152,14 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 89.4545,
           "layer": "",
           "locked": false,
           "name": "TestText",
-          "width": 0,
-          "x": 298,
-          "y": 201,
+          "width": 451.773,
+          "x": 253,
+          "y": 144,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -158,7 +175,26 @@
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "angularDamping": 0.1,
+              "autoResizing": false,
+              "averageFriction": 0.1,
+              "averageRestitution": 0,
+              "coordsList": "",
+              "dynamic": true,
+              "fixedRotation": true,
+              "isBullet": false,
+              "linearDamping": 0.1,
+              "massDensity": 1,
+              "name": "Physics",
+              "polygonHeight": 200,
+              "polygonWidth": 200,
+              "positioning": "OnCenter",
+              "shapeType": "Box",
+              "type": "PhysicsBehavior::PhysicsBehavior"
+            }
+          ],
           "string": "Testing...",
           "font": "",
           "characterSize": 40,
@@ -167,9 +203,40 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "height": 32,
+          "name": "NewObject",
+          "texture": "Image-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::Angle"
+              },
+              "parameters": [
+                "TestText",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        }
+      ],
       "layers": [
         {
           "name": "",
@@ -189,7 +256,16 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "gravityX": 0,
+          "gravityY": 9,
+          "name": "Physics",
+          "scaleX": 100,
+          "scaleY": 100,
+          "type": "PhysicsBehavior::PhysicsBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [],
