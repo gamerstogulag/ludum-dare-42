@@ -12,7 +12,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\shoes\\GDevelop projects\\My project8\\game.json",
+    "projectFile": "C:\\Users\\PRF\\GDevelop projects\\My project6\\ludum-dare-42-master\\ludum-dare-42-master\\shaded-building-prototype\\game.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -521,6 +521,46 @@
         "name": "NewObject3-1-0.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject2-1-0.png",
+        "kind": "image",
+        "name": "NewObject2-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject2-2.png",
+        "kind": "image",
+        "name": "NewObject2-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject2-3.png",
+        "kind": "image",
+        "name": "NewObject2-3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1.png",
+        "kind": "image",
+        "name": "Default-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-0.png",
+        "kind": "image",
+        "name": "Default-1-0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -566,7 +606,7 @@
           "locked": false,
           "name": "building",
           "width": 289,
-          "x": 109,
+          "x": -2,
           "y": 311,
           "zOrder": 1,
           "numberProperties": [],
@@ -631,8 +671,8 @@
           "locked": false,
           "name": "platform",
           "width": 0,
-          "x": 200,
-          "y": 393,
+          "x": 169,
+          "y": 417,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -721,8 +761,8 @@
           "locked": false,
           "name": "player",
           "width": 0,
-          "x": 80,
-          "y": 415,
+          "x": 28,
+          "y": 267,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -787,6 +827,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "locked": false,
+          "name": "platform",
+          "width": 128.356,
+          "x": 0,
+          "y": 281,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "locked": false,
+          "name": "platform",
+          "width": 68.9505,
+          "x": 131,
+          "y": 340,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -807,7 +877,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewObject-1.png",
+                      "image": "Default-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1634,12 +1704,46 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
+                  "looping": true,
+                  "timeBetweenFrames": 0.09,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewObject2-1.png",
+                      "image": "NewObject2-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject2-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject2-3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
